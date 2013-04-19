@@ -1,0 +1,8 @@
+ <div class="field">
+ 	<%= form_for [@idea, @comment] do |f| %>
+	    <%= f.label :content %><br />
+	    <%= f.text_area :content %>
+	    <%= f.hidden_field :idea_id %>
+	    <%= f.submit %>
+	<% end %>
+ </div>
